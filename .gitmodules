@@ -1,0 +1,3 @@
+[submodule "board/lib/kicad-m5atom-library"]
+	path = board/lib/kicad-m5atom-library
+	url = git@github.com:maciejmatczak/kicad-m5atom-library.git

@@ -1,3 +1,6 @@
 [submodule "board/lib/kicad-m5atom-library"]
 	path = board/lib/kicad-m5atom-library
 	url = git@github.com:maciejmatczak/kicad-m5atom-library.git
+[submodule "scripts/kicad-jlcpcb-bom-plugin"]
+	path = scripts/kicad-jlcpcb-bom-plugin
+	url = git@github.com:wokwi/kicad-jlcpcb-bom-plugin.git

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name m5atom-footprints)(type KiCad)(uri ${KIPRJMOD}/lib/kicad-m5atom-library/m5atom-footprints.pretty)(options "")(descr ""))
+)

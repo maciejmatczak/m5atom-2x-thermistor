@@ -1,0 +1,150 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Analog_ADC:ADS1115IDGS U2
+U 1 1 60170045
+P 4700 4650
+F 0 "U2" H 4700 5331 50  0000 C CNN
+F 1 "ADS1115IDGS" H 4700 5240 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 4700 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 4650 3750 50  0001 C CNN
+	1    4700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4100 2550 4000
+Wire Wire Line
+	2750 4100 2750 4000
+Wire Wire Line
+	2650 5650 2650 5700
+Wire Wire Line
+	4700 5050 4700 5150
+Wire Wire Line
+	4700 4150 4700 3800
+Wire Wire Line
+	3050 4400 3150 4400
+Wire Wire Line
+	3050 4500 3150 4500
+Text Label 3150 4400 0    50   ~ 0
+CLK
+Text Label 3150 4500 0    50   ~ 0
+SDA
+Text Label 5200 4650 0    50   ~ 0
+CLK
+Text Label 5200 4750 0    50   ~ 0
+SDA
+Wire Wire Line
+	5100 4650 5200 4650
+Wire Wire Line
+	5100 4750 5200 4750
+Wire Wire Line
+	5100 4850 5200 4850
+Text Label 5200 4850 0    50   ~ 0
+GND
+Wire Wire Line
+	4300 4550 4200 4550
+Wire Wire Line
+	4300 4650 4200 4650
+Text Label 4200 4550 2    50   ~ 0
+3V3
+$Comp
+L power:+5V #PWR01
+U 1 1 60178553
+P 2550 4000
+F 0 "#PWR01" H 2550 3850 50  0001 C CNN
+F 1 "+5V" H 2565 4173 50  0000 C CNN
+F 2 "" H 2550 4000 50  0001 C CNN
+F 3 "" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 60178A95
+P 2750 4000
+F 0 "#PWR03" H 2750 3850 50  0001 C CNN
+F 1 "+3V3" H 2765 4173 50  0000 C CNN
+F 2 "" H 2750 4000 50  0001 C CNN
+F 3 "" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60179034
+P 2650 5750
+F 0 "#PWR02" H 2650 5500 50  0001 C CNN
+F 1 "GND" H 2655 5577 50  0000 C CNN
+F 2 "" H 2650 5750 50  0001 C CNN
+F 3 "" H 2650 5750 50  0001 C CNN
+	1    2650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 6017A738
+P 4700 3800
+F 0 "#PWR04" H 4700 3650 50  0001 C CNN
+F 1 "+3V3" H 4715 3973 50  0000 C CNN
+F 2 "" H 4700 3800 50  0001 C CNN
+F 3 "" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 4450
+NoConn ~ 4200 4650
+NoConn ~ 3050 4900
+NoConn ~ 3050 4800
+NoConn ~ 3050 4700
+NoConn ~ 3050 4600
+Wire Wire Line
+	2650 5700 3150 5700
+Wire Wire Line
+	3150 5700 3150 5400
+Wire Wire Line
+	3150 5200 3050 5200
+Connection ~ 2650 5700
+Wire Wire Line
+	2650 5700 2650 5750
+Wire Wire Line
+	3050 5400 3150 5400
+Connection ~ 3150 5400
+Wire Wire Line
+	3150 5400 3150 5200
+Wire Wire Line
+	3600 5100 3600 4850
+Wire Wire Line
+	3050 5100 3600 5100
+Wire Wire Line
+	3050 5300 3700 5300
+Wire Wire Line
+	3700 4750 4300 4750
+Wire Wire Line
+	3700 4750 3700 5300
+Wire Wire Line
+	3600 4850 4300 4850
+$Comp
+L M5_Atom:M5_Atom_3.96Plug U1
+U 1 1 60280DDF
+P 2650 5150
+F 0 "U1" H 2320 5471 50  0000 R CNN
+F 1 "M5_Atom_3.96Plug" H 2320 5380 50  0000 R CNN
+F 2 "m5atom-footprints:ProtoKit_3.96Plug" H 2700 3950 50  0001 C CNN
+F 3 "https://m5stack.com/collections/m5-atom" H 800 4000 50  0001 C CNN
+	1    2650 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

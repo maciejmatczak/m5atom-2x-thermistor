@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name M5_Atom)(type Legacy)(uri ${KIPRJMOD}/lib/kicad-m5atom-library/m5atom-symbols/M5_Atom.lib)(options "")(descr ""))
+  (lib (name m5atom-2x-thermistor-rescue)(type Legacy)(uri ${KIPRJMOD}/m5atom-2x-thermistor-rescue.lib)(options "")(descr ""))
+)

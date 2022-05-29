@@ -5,7 +5,7 @@ PCB=board_simple/m5atom-2x-thermistor.kicad_pcb
 
 plot: FAB/m5atom-2x-thermistor.zip
 
-FAB/%.zip: board/%.kicad_pcb
+FAB/%.zip: board_simple/%.kicad_pcb
 	mkdir -p $(dir $@)
 	
 	scripts/plot_fab.py $< $(dir $@)$*
